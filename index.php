@@ -34,34 +34,7 @@
 		</div>
 	</form>
 
-	<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<form action="update.php" method="post">
-					<div class="container p-5 text-center w-75">
-						<div class="mb-3">
-							<label for="formFile2" class="form-label">Car Image</label>
-							<input class="form-control" name="image2" type="url" id="formFile2" required />
-						</div>
-						<div class="mb-3">
-							<label for="car-model2" class="form-label">Car Model</label>
-							<input type="text" class="form-control" name="model2" id="car-model2" required />
-						</div>
-						<div class="mb-3">
-							<label for="car-price2" class="form-label">Car Price</label>
-							<input type="number" class="form-control" name="price2" id="car-price2" required />
-						</div>
-						<div class="mb-3">
-							<label for="car-color2" class="form-label">Car Color</label>
-							<input type="text" class="form-control" name="color2" id="car-color2" required />
-						</div>
 
-						<button type="submit" class="btn btn-warning w-75">Submit</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div> -->
 
 	<h1 class="text-center pt-5">Available Cars</h1>
 
@@ -83,8 +56,7 @@
 			// Fetch all
 			$result->fetch_all(MYSQLI_ASSOC);
 
-			// Free result set
-			// $result->free_result();
+
 			?>
 			<?php
 			foreach ($result as $car) {
